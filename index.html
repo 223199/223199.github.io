@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .work-btn { cursor: pointer; } 
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="#">223199 Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="py-5">
+      <div class="container py-4">
+        <h1 class="fw-bold mb-2">Portfolio</h1>
+        <p class="text-secondary mb-0">
+          松村有菜のポートフォリオサイトです。
+        </p>
+      </div>
+    </header>
+
+    <!-- Works（アイコン一覧） -->
+    <section id="works" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="fw-bold mb-4">Works</h2>
+
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-6 col-md-4">
+            <button class="w-100 border-0 bg-transparent work-btn"
+              data-bs-toggle="modal" data-bs-target="#work1Modal">
+              <div class="card h-100 shadow-sm text-center p-3">
+                <div class="fs-1">📒</div>
+                <h3 class="h6 mt-2 mb-0">自己管理アプリ</h3>
+              </div>
+            </button>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-6 col-md-4">
+            <button class="w-100 border-0 bg-transparent work-btn"
+              data-bs-toggle="modal" data-bs-target="#work2Modal">
+              <div class="card h-100 shadow-sm text-center p-3">
+                <div class="fs-1">📦</div>
+                <h3 class="h6 mt-2 mb-0">在庫管理アプリ</h3>
+              </div>
+            </button>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-6 col-md-4">
+            <button class="w-100 border-0 bg-transparent work-btn"
+              data-bs-toggle="modal" data-bs-target="#work3Modal">
+              <div class="card h-100 shadow-sm text-center p-3">
+                <div class="fs-1">🎨</div>
+                <h3 class="h6 mt-2 mb-0">p5.js</h3>
+              </div>
+            </button>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-6 col-md-4">
+            <button class="w-100 border-0 bg-transparent work-btn"
+              data-bs-toggle="modal" data-bs-target="#work4Modal">
+              <div class="card h-100 shadow-sm text-center p-3">
+                <div class="fs-1">🧱</div>
+                <h3 class="h6 mt-2 mb-0">block-game</h3>
+              </div>
+            </button>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-6 col-md-4">
+            <button class="w-100 border-0 bg-transparent work-btn"
+              data-bs-toggle="modal" data-bs-target="#work5Modal">
+              <div class="card h-100 shadow-sm text-center p-3">
+                <div class="fs-1">📑</div>
+                <h3 class="h6 mt-2 mb-0">産学連携（プレゼン）</h3>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- モーダル：1 自己管理アプリ -->
+    <div class="modal fade" id="work1Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">自己管理アプリ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary mb-0">
+              生活ログ・自己管理用のWebアプリ（GitHub Pages）。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://223199.github.io/My-Life-Log./" target="_blank" rel="noreferrer" class="btn btn-dark">
+              デモを見る
+            </a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル：2 在庫管理アプリ -->
+    <div class="modal fade" id="work2Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">在庫管理アプリ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary mb-0">
+              在庫の追加・削除・管理を行うWebアプリ（GitHub Pages）。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://223199.github.io/stock/" target="_blank" rel="noreferrer" class="btn btn-dark">
+              デモを見る
+            </a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル：3 p5.js -->
+    <div class="modal fade" id="work3Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">p5.js</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary mb-0">
+              p5.js を使った制作（GitHub Pages）。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://223199.github.io/p5.js/" target="_blank" rel="noreferrer" class="btn btn-dark">
+              作品を見る
+            </a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル：4 block-game -->
+    <div class="modal fade" id="work4Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">block-game</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary mb-0">
+              ブロックゲーム（GitHub Pages）。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://223199.github.io/blockgame/" target="_blank" rel="noreferrer" class="btn btn-dark">
+              プレイする
+            </a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダル：5 産学連携（Canva） -->
+    <div class="modal fade" id="work5Modal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">産学連携（プレゼン）</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-secondary">
+              Canvaで作成したプレゼン資料です。<br />
+              ※リンクが「/edit」の場合、閲覧権限によっては開けないことがあります。可能なら「共有」→「閲覧のみリンク（/view）」にして差し替えるのがおすすめです。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://www.canva.com/design/DAGVZmL2TwE/EA-FMTZpNp-CbWisePg67w/edit?utm_content=DAGVZmL2TwE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-dark"
+            >
+              プレゼン資料を見る
+            </a>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">閉じる</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 border-top">
+      <div class="container d-flex justify-content-between flex-wrap gap-2">
+        <div class="text-secondary small">© 223199</div>
+        <div class="text-secondary small"><a class="link-secondary text-decoration-none" href="#works">Worksへ</a></div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
